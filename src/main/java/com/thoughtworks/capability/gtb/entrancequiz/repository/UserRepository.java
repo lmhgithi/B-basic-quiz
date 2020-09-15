@@ -52,4 +52,9 @@ public class UserRepository {
         users.add(user);
         return users.get(users.size()-1);
     }
+
+    public Education addEducation(Education education) {
+        educations.add(education);
+        return educations.get(educations.size()-1);
+    }
 }

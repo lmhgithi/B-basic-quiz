@@ -38,4 +38,10 @@ public class UserController {
     public User addUser(@RequestBody User user){
         return userService.addUser(user);
     }
+
+    @PostMapping("/{userId}/educations")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Education addEducation(@PathVariable long userId, @RequestBody Education education){
+        return userService.addEducation(userId, education);
+    }
 }

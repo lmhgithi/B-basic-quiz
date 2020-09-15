@@ -32,4 +32,9 @@ public class UserService {
     public User addUser(User user) {
         return userRepository.addUser(user);
     }
+
+    public Education addEducation(long userId, Education education) {
+        education.setUserId(userId);
+        return userRepository.addEducation(education);
+    }
 }
