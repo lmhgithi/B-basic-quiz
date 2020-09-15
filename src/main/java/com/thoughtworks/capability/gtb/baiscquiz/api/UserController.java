@@ -1,12 +1,11 @@
-package com.thoughtworks.capability.gtb.entrancequiz.api;
+package com.thoughtworks.capability.gtb.baiscquiz.api;
 
 
-import com.thoughtworks.capability.gtb.entrancequiz.domain.Education;
-import com.thoughtworks.capability.gtb.entrancequiz.domain.User;
-import com.thoughtworks.capability.gtb.entrancequiz.exception.CommonException;
-import com.thoughtworks.capability.gtb.entrancequiz.service.UserService;
+import com.thoughtworks.capability.gtb.baiscquiz.domain.Education;
+import com.thoughtworks.capability.gtb.baiscquiz.domain.User;
+import com.thoughtworks.capability.gtb.baiscquiz.exception.CommonException;
+import com.thoughtworks.capability.gtb.baiscquiz.service.UserService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

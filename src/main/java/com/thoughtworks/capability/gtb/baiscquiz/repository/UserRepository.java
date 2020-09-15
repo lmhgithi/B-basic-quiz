@@ -1,7 +1,7 @@
-package com.thoughtworks.capability.gtb.entrancequiz.repository;
+package com.thoughtworks.capability.gtb.baiscquiz.repository;
 
-import com.thoughtworks.capability.gtb.entrancequiz.domain.Education;
-import com.thoughtworks.capability.gtb.entrancequiz.domain.User;
+import com.thoughtworks.capability.gtb.baiscquiz.domain.Education;
+import com.thoughtworks.capability.gtb.baiscquiz.domain.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

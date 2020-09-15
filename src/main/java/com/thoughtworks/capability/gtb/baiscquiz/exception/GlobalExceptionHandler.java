@@ -1,6 +1,6 @@
-package com.thoughtworks.capability.gtb.entrancequiz.exception;
+package com.thoughtworks.capability.gtb.baiscquiz.exception;
 
-import com.thoughtworks.capability.gtb.entrancequiz.exception.dto.ErrorResult;
+import com.thoughtworks.capability.gtb.baiscquiz.exception.dto.ErrorResult;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

@@ -1,4 +1,4 @@
-package com.thoughtworks.capability.gtb.entrancequiz.exception.dto;
+package com.thoughtworks.capability.gtb.baiscquiz.exception.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

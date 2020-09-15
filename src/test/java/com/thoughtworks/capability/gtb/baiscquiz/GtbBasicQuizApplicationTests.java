@@ -1,10 +1,10 @@
-package com.thoughtworks.capability.gtb.entrancequiz;
+package com.thoughtworks.capability.gtb.baiscquiz;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GtbEntranceQuizApplicationTests {
+class GtbBasicQuizApplicationTests {
 
 	@Test
 	void contextLoads() {

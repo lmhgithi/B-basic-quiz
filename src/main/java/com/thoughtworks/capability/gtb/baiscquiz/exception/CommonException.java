@@ -1,4 +1,4 @@
-package com.thoughtworks.capability.gtb.entrancequiz.exception;
+package com.thoughtworks.capability.gtb.baiscquiz.exception;
 
 public class CommonException extends Exception {
     private String message;

@@ -1,12 +1,11 @@
-package com.thoughtworks.capability.gtb.entrancequiz.service;
+package com.thoughtworks.capability.gtb.baiscquiz.service;
 
-import com.thoughtworks.capability.gtb.entrancequiz.domain.Education;
-import com.thoughtworks.capability.gtb.entrancequiz.domain.User;
-import com.thoughtworks.capability.gtb.entrancequiz.exception.CommonException;
-import com.thoughtworks.capability.gtb.entrancequiz.repository.UserRepository;
+import com.thoughtworks.capability.gtb.baiscquiz.domain.Education;
+import com.thoughtworks.capability.gtb.baiscquiz.domain.User;
+import com.thoughtworks.capability.gtb.baiscquiz.exception.CommonException;
+import com.thoughtworks.capability.gtb.baiscquiz.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
-import java.security.InvalidParameterException;
 import java.util.*;
 
 @Service
