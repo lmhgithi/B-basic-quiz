@@ -23,6 +23,6 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResult> handle(CommonException e) {
         String message = e.getMessage();
         ErrorResult errorResult = new ErrorResult(Instant.now().toString(), 404, "Not Found", message);
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResult);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResult);
     }
 }

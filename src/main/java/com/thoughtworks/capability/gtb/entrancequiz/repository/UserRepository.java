@@ -48,7 +48,7 @@ public class UserRepository {
     }
 
     public User addUser(User user) {
-        user.setId(users.size());
+        user.setId(users.size()+1);
         users.add(user);
         return users.get(users.size()-1);
     }
