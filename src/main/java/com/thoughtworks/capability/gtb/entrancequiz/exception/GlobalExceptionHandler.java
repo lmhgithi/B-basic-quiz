@@ -1,4 +1,4 @@
-package com.thoughtworks.capability.gtb.basicquiz.exception;
+package com.thoughtworks.capability.gtb.entrancequiz.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

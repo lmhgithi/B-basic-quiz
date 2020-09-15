@@ -1,13 +1,13 @@
-package com.thoughtworks.capability.gtb.basicquiz;
+package com.thoughtworks.capability.gtb.entrancequiz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GtbBasicQuizApplication {
+public class GtbEntranceQuizApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GtbBasicQuizApplication.class, args);
+		SpringApplication.run(GtbEntranceQuizApplication.class, args);
 	}
 
 }
