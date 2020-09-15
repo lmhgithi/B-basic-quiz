@@ -2,6 +2,7 @@ package com.thoughtworks.capability.gtb.entrancequiz.service;
 
 import com.thoughtworks.capability.gtb.entrancequiz.domain.Education;
 import com.thoughtworks.capability.gtb.entrancequiz.domain.User;
+import com.thoughtworks.capability.gtb.entrancequiz.exception.CommonException;
 import com.thoughtworks.capability.gtb.entrancequiz.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
@@ -16,17 +17,22 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User getUser(Long id) {
+    public User getUser(Long id) throws CommonException {
         Optional<User> user = userRepository.getUserById(id);
         if(user.isPresent()) {
             return user.get();
         } else {
-            throw new InvalidParameterException();
+            throw new CommonException("user id not exists");
         }
     }
 
-    public List<Education> getEducations(long userId) {
-        return userRepository.getEducationsByUserId(userId);
+    public List<Education> getEducations(long userId) throws CommonException {
+        List<Education> educations = userRepository.getEducationsByUserId(userId);
+        if(educations.size() > 0) {
+            return educations;
+        } else {
+            throw new CommonException("education info of the user id is not exists");
+        }
     }
 
     public User addUser(User user) {
