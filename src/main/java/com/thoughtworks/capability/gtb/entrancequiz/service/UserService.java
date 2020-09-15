@@ -1,5 +1,6 @@
 package com.thoughtworks.capability.gtb.entrancequiz.service;
 
+import com.thoughtworks.capability.gtb.entrancequiz.domain.Education;
 import com.thoughtworks.capability.gtb.entrancequiz.domain.User;
 import com.thoughtworks.capability.gtb.entrancequiz.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -22,5 +23,9 @@ public class UserService {
         } else {
             throw new InvalidParameterException();
         }
+    }
+
+    public List<Education> getEducations(long userId) {
+        return userRepository.getEducationsByUserId(userId);
     }
 }
