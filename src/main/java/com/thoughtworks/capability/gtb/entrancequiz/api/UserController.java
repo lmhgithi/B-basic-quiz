@@ -32,4 +32,10 @@ public class UserController {
     public List<Education> getEducations(@PathVariable long userId){
         return userService.getEducations(userId);
     }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public User addUser(@RequestBody User user){
+        return userService.addUser(user);
+    }
 }

@@ -46,4 +46,10 @@ public class UserRepository {
         return educations.stream()
                 .filter(education -> education.getUserId() == userId).collect(Collectors.toList());
     }
+
+    public User addUser(User user) {
+        user.setId(users.size());
+        users.add(user);
+        return users.get(users.size()-1);
+    }
 }
