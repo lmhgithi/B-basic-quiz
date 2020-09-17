@@ -48,6 +48,7 @@ public class UserRepository {
     }
 
     public User addUser(User user) {
+        // GTB: - users.size()+1 和 users.size()-1 都是啥意思？这么写代码可读性差，且并发情况下更容易出现错误
         user.setId(users.size()+1);
         users.add(user);
         return users.get(users.size()-1);

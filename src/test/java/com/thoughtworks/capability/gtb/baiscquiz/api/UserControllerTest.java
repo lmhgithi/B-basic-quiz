@@ -18,6 +18,8 @@ import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+// GTB: + 有测试
+// GTB: - 没有测试增加 education 的场景？
 @SpringBootTest
 @AutoConfigureMockMvc
 class UserControllerTest {
@@ -29,6 +31,7 @@ class UserControllerTest {
 
     ObjectMapper objectMapper = new ObjectMapper();
 
+    // GTB: - 在 java 技术栈上，通常测试命名用全小写加下划线分隔的风格
     @Test
     void shouldGetUser() throws Exception {
         mockMvc.perform(get("/users/1"))
