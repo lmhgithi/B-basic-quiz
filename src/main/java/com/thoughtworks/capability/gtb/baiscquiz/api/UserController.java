@@ -23,12 +23,12 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public User getUser(@PathVariable long id) throws CommonException {
+    public User getUser(@PathVariable long id) {
         return userService.getUser(id);
     }
 
     @GetMapping("/{userId}/educations")
-    public List<Education> getEducations(@PathVariable long userId) throws CommonException {
+    public List<Education> getEducations(@PathVariable long userId) {
         return userService.getEducations(userId);
     }
 

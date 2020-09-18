@@ -1,13 +1,26 @@
 package com.thoughtworks.capability.gtb.baiscquiz.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
+
+import javax.persistence.*;
 import javax.validation.constraints.*;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Entity
 public class Education {
-    private long userId;
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @JsonIgnore
+    private long id;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonIgnore
+    private User user;
 
     @NotNull
     @Min(1900)
